@@ -5,7 +5,9 @@ import lombok.experimental.UtilityClass;
 @UtilityClass
 public class Constants {
 
+    public static final int ZERO = 0;
     public static final int NOVE = 9;
+    public static final int DEZ = 10;
     public static final int SESSENTA = 60;
     public static final String VAZIO = "";
     public static final String ENVIO = "envio";

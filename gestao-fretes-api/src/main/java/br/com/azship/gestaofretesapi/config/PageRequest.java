@@ -5,11 +5,12 @@ import lombok.Data;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 
+import static br.com.azship.gestaofretesapi.modulos.comum.util.Constants.DEZ;
+import static br.com.azship.gestaofretesapi.modulos.comum.util.Constants.ZERO;
+
 @Data
 @AllArgsConstructor
 public class PageRequest implements Pageable{
-
-    private static final int LIMITE = 10;
 
     private int page;
     private int size;
@@ -17,10 +18,10 @@ public class PageRequest implements Pageable{
     private String orderDirection;
 
     public PageRequest() {
-        this.page = 0;
-        this.size = LIMITE;
+        this.page = ZERO;
+        this.size = DEZ;
         this.orderBy = "id";
-        this.orderDirection = "ASC";
+        this.orderDirection = "DESC";
     }
 
     @Override
