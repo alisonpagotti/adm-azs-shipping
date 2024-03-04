@@ -9,5 +9,5 @@ Projeto desenvolvido com SpringBoot, utilizando banco de dados em memória e com
 
 Swagger: http://localhost:8080/swagger-ui/index.html#/
 - Não há fretes cadastrados, para testar o fluxo, iniciar os testes cadastrando novos fretes.
-- Método GET para listar todos os fretes, estão paginados.
+- Método GET para listar todos os fretes está paginado.
 - <pre>{ "page": 0, "size": 10, "orderBy": "id", "orderDirection": "DESC", "pageNumber": 0, "pageSize": 10 }</pre>
